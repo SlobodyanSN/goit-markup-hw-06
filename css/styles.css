@@ -412,6 +412,7 @@ body {
 .flex {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .logo-deko-white {
   color: var(--accent-font-color);
@@ -764,14 +765,49 @@ body {
   border-radius: 4px;
   margin-bottom: 20px;
   outline: 0px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
 }
+
 .form-input-txt:focus {
   border-color: #2196f3;
 }
+
 .agree-title {
   display: inline-block;
   margin-bottom: 30px;
 }
+
+.icon-checked {
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+}
+
+.icon-unchecked {
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+}
+
+.checkbox-agree:checked + .contacts-icon > .icon-unchecked {
+  opacity: 0;
+}
+
+.checkbox-agree:checked + .contacts-icon > .icon-checked {
+  opacity: 1;
+}
+
+.contract {
+  color: var(--accent-color);
+}
+
 .submit-btn {
   cursor: pointer;
   font-weight: 700;
