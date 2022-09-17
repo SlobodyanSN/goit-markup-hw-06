@@ -412,7 +412,6 @@ body {
 .flex {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 .logo-deko-white {
   color: var(--accent-font-color);
@@ -482,9 +481,10 @@ body {
 .sign-up {
   display: flex;
   flex-direction: column;
-  margin-left: 90px;
+  margin-left: auto;
 }
 .sign-up-name {
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--accent-font-color);
   line-height: calc(16 / 14);
@@ -713,12 +713,29 @@ body {
 }
 .modal-title {
   margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 
 .form-field {
+  color: #212121;
+
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+
+  position: relative;
+}
+.form-field-txt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 
   position: relative;
 }
@@ -763,7 +780,7 @@ body {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 20px;
+
   outline: 0px;
 
   transition-property: border-color;
@@ -778,6 +795,12 @@ body {
 .agree-title {
   display: inline-block;
   margin-bottom: 30px;
+}
+
+.agree {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .icon-checked {

@@ -530,6 +530,7 @@
               id="sign-up"
               name="sign-up"
               placeholder="E-mail"
+              required
             />
             <button class="sign-up-btn" type="submit"
               >Підписатися
@@ -547,16 +548,17 @@
           ><svg class="modal-btn-icon" width="18" height="18">
             <use href="./imeges/icons.svg#cross"></use></svg
         ></button>
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо </h2>
-        <form class="service-order" name="service-order" autocomplete="on" novalidate>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо </p>
+        <form class="service-order" name="service-order" autocomplete="on">
           <div class="form-field">
             <label class="form-name" for="user-name">Ім`я</label>
             <input
               class="form-input"
-              type="text "
+              type="text"
               id="user-name"
               name="user-name"
               placeholder=" "
+              required
             />
             <svg class="form-icon" width="18" height="18">
               <use href="./imeges/icons.svg#person"></use>
@@ -570,6 +572,7 @@
               id="user-phone"
               name="user-phone"
               placeholder=" "
+              required
             />
             <svg class="form-icon" width="18" height="18">
               <use href="./imeges/icons.svg#phone-old"></use>
@@ -583,13 +586,14 @@
               id="user-mail"
               name="user-mail"
               placeholder=" "
+              required
             />
             <svg class="form-icon" width="18" height="18">
               <use href="./imeges/icons.svg#email"></use>
             </svg>
           </div>
 
-          <div class="form-field">
+          <div class="form-field-txt">
             <label class="form-name" for="comment">Коментар</label>
             <textarea
               class="form-input-txt"
@@ -601,13 +605,14 @@
             ></textarea>
           </div>
           <div>
-            <label for="agree">
+            <label class="agree" for="agree">
               <input
                 class="checkbox-agree visually-hidden"
                 type="checkbox"
                 name="agree"
                 value="agree"
                 id="agree"
+                required
               />
               <svg class="contacts-icon" width="16" height="15">
                 <use class="icon-checked" href="./imeges/icons.svg#checked"></use>
